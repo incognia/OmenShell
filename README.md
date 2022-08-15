@@ -19,7 +19,7 @@ git clone https://github.com/incognia/OmenShell
 cd OmenShell
 ./install.sh
 ```
-### Dpendencies
+### Dependencies
 
 The option `-s` requires the Speedtest CLI by Ookla to test the internet bandwith. You need to execute the following command to install it:
 
