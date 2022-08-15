@@ -8,7 +8,7 @@ You need a valid user on the remote system with passwordless access via SSH key.
 
 ## Configuration
 
-Edit the `omen.host` file to add the remote servers you want to manage.
+Edit the `omen.host` file to add the remote servers you want to manage. After the installation this file can be located in the `~/bin` directory.
 
 ## Installation
 
@@ -19,18 +19,27 @@ git clone https://github.com/incognia/OmenShell
 cd OmenShell
 ./install.sh
 ```
+### Dpendencies
+
+The option `-s` requires the Speedtest CLI by Ookla to test the internet bandwith. You need to execute the following command to install it:
+
+```bash
+sudo apt-get install curl
+curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+sudo apt-get install speedtest
+```
 
 ## Usage
 ```
-omen -[option]
-      [-d] Show information about the file system
-      [-f] Display amount of free and used memory in each system
-      [-h] Show the system's host name
-      [-l] Show a listing of last logged in users
-      [-n] Show network and DNS configuration
-      [-s] Test internet bandwidth using speedtest.net
-      [-t] Display Linux processes
-      [-u] Tell how long each system has been running
+omen [-option]
+  [-d] Show information about the file system
+  [-f] Display amount of free and used memory in each system
+  [-h] Show the system's host name
+  [-l] Show a listing of last logged in users
+  [-n] Show network and DNS configuration
+  [-s] Test internet bandwidth using speedtest.net
+  [-t] Display Linux processes
+  [-u] Tell how long each system has been running
 ```
 
 #### Example
