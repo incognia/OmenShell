@@ -45,22 +45,39 @@ omen [-option]
 
 #### Example
 
-The `omen` command with flag `-u`:
+The `omen` command with flag `-h`:
 ```bash
-omen -u
+omen -h
 ```
 Output:
 ```bash
 =======================================================[ Server IP address ]====
                                            ┏━┓┏━┓╺┓  ╺┓ ╺┓ ┏━┓ ╻ ╻┏━┓ ╺┓ ┏━┓┏━┓
-                                           ┏━┛┃┃┃ ┃   ┃  ┃ ┣━┓ ┗━┫┃┃┃  ┃ ╺━┫┣━┫
+                                           ┏━┛┃┃┃ ┃   ┃  ┃ ┣━┓ ┗━┫┃┃┃  ┃ ╺━┫┃┃┃
                                            ┗━╸┗━┛╺┻╸╹╺┻╸╺┻╸┗━┛╹  ╹┗━┛╹╺┻╸┗━┛┗━┛
- 00:42:57 up 8 days, 14:29,  0 users,  load average: 1.78, 1.74, 1.64
+ Static hostname: faraday
+         Chassis: server
+Operating System: Ubuntu 22.04.2 LTS
+          Kernel: Linux 5.15.0-60-generic
+ Hardware Vendor: HPE
 =======================================================[ Server IP address ]====
-                                           ┏━┓┏━┓╺┓  ╺┓ ╺┓ ┏━┓ ╻ ╻┏━┓ ╺┓ ╻ ╻╺┓ 
-                                           ┏━┛┃┃┃ ┃   ┃  ┃ ┣━┓ ┗━┫┃┃┃  ┃ ┗━┫ ┃ 
-                                           ┗━╸┗━┛╺┻╸╹╺┻╸╺┻╸┗━┛╹  ╹┗━┛╹╺┻╸  ╹╺┻╸
- 00:42:58 up 1 day, 12:37,  0 users,  load average: 0.00, 0.00, 0.00
+                                           ┏━┓┏━┓╺┓  ╺┓ ╺┓ ┏━┓ ╻ ╻┏━┓ ╺┓ ┏━┓┏━┓
+                                           ┏━┛┃┃┃ ┃   ┃  ┃ ┣━┓ ┗━┫┃┃┃  ┃ ╺━┫┣━┓
+                                           ┗━╸┗━┛╺┻╸╹╺┻╸╺┻╸┗━┛╹  ╹┗━┛╹╺┻╸┗━┛┗━┛
+   Static hostname: desa
+           Chassis: vm
+    Virtualization: oracle
+  Operating System: Ubuntu 16.04.7 LTS
+            Kernel: Linux 4.4.0-210-generic
+=======================================================[ Server IP address ]====
+                                           ┏━┓┏━┓╺┓  ╺┓ ╺┓ ┏━┓ ╻ ╻┏━┓ ╺┓ ╻ ╻┏━┓
+                                           ┏━┛┃┃┃ ┃   ┃  ┃ ┣━┓ ┗━┫┃┃┃  ┃ ┗━┫┃┃┃
+                                           ┗━╸┗━┛╺┻╸╹╺┻╸╺┻╸┗━┛╹  ╹┗━┛╹╺┻╸  ╹┗━┛
+   Static hostname: dev-tomcat
+           Chassis: vm
+    Virtualization: microsoft
+  Operating System: Debian GNU/Linux 9 (stretch)
+            Kernel: Linux 4.9.0-19-amd64
 ===================================================[ OmenShell by incognia ]====
 ```
 
