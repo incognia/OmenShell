@@ -11,7 +11,7 @@ do
 	printf ${BLUE}
 	figlet -f future -r $x
 	printf ${GREEN}
-	ssh $USER@$x -i ~/.ssh/id_rsa $1	
+	ssh -o LogLevel=error $USER@$x -i ~/.ssh/id_rsa $1	
 done
 
 echo -e "${RED}===================================================[ OmenShell by incognia ]====${NC}"

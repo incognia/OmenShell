@@ -1,6 +1,6 @@
 # OmenShell | Manage multiple servers through SSH
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-GPLv3-blue)](https://www.gnu.org/licenses/gpl-3.0.html) Rodrigo Ernesto Álvarez Aguilera | [Mail](mailto:incogniaqgmail.com) | [LinkedIn](https://www.linkedin.com/in/rodrigo-alvarez-aguilera/) | [Blog](https://incognia.wordpress.com/about)
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-steelblue)](https://www.gnu.org/licenses/gpl-3.0.html) ![Ubuntu](https://img.shields.io/badge/Ubuntu-v22.04.2_LTS-e9500e.svg) ![Bash](https://img.shields.io/badge/Bash-v5.1.16-232c34.svg)
 
 ## Requirements
 
@@ -21,12 +21,13 @@ cd OmenShell
 ```
 ### Dependencies
 
-The option `-s` requires the Speedtest CLI by Ookla to test the internet bandwith. You need to execute the following command to install it:
+The option `-s` requires the Speedtest CLI by Ookla to test the internet bandwith. You need to execute the following commands to install it:
 
 ```bash
 sudo apt-get install curl
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
 sudo apt-get install speedtest
+speedtest --accept-license
 ```
 
 ## Usage
@@ -62,3 +63,5 @@ Output:
  00:42:58 up 1 day, 12:37,  0 users,  load average: 0.00, 0.00, 0.00
 ===================================================[ OmenShell by incognia ]====
 ```
+
+CC 2023 | Rodrigo Ernesto Álvarez Aguilera | [Mail](mailto:incogniaqgmail.com) | [LinkedIn](https://www.linkedin.com/in/rodrigo-alvarez-aguilera/) | [Blog](https://incognia.wordpress.com/about)

@@ -1,7 +1,7 @@
 #!/bin/bash
 #   OmenShell - Manage multiple servers through SSH in one go
 #
-#   Copyright © 2022, Rodrigo Ernesto Alvarez Aguilera <incognia@gmail.com>
+#   Copyright © 2023, Rodrigo Ernesto Alvarez Aguilera <incognia@gmail.com>
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -16,10 +16,10 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-#   Version 0.1 - August 13, 2022
+#   Version 0.2 - Febraury 27, 2023
 #   Author: Rodrigo Ernesto Alvarez Aguilera
 #
-#   Tested under Ubuntu 20.04.4 LTS using GNU bash version 5.0.17
+#   Tested under Ubuntu 22.04.2 LTS using GNU bash version 5.1.16
 #
 
 while getopts 'dfhlnstu' OPTION; do
@@ -31,7 +31,7 @@ while getopts 'dfhlnstu' OPTION; do
       omenshell 'free -ht'
       ;;
     h)
-      omenshell 'hostnamectl | grep -e hostname -e System -e Kernel'
+      omenshell 'hostnamectl | grep -e hostname -e System -e Kernel -e Vendor -e Virt -e Chassis'
       ;;
     l)
       omenshell 'last -a | sort -k1,1 -u'
