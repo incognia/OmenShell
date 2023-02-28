@@ -33,14 +33,15 @@ speedtest --accept-license
 ## Usage
 ```
 omen [-option]
-  [-d] Show information about the file system
-  [-f] Display amount of free and used memory in each system
-  [-h] Show the system's host name
+  [-d] Show information about the remote file system
+  [-f] Display amount of free and used memory in each remote system
+  [-h] Show the remote system's host name
   [-l] Show a listing of last logged in users
   [-n] Show network and DNS configuration
   [-s] Test internet bandwidth using speedtest.net
   [-t] Display Linux processes
-  [-u] Tell how long each system has been running
+  [-u] Tell how long each remote system has been running
+  [-v] Show OmenShell version and License
 ```
 
 #### Example

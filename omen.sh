@@ -22,7 +22,7 @@
 #   Tested under Ubuntu 22.04.2 LTS using GNU bash version 5.1.16
 #
 
-while getopts 'dfhlnstu' OPTION; do
+while getopts 'dfhlnstuv' OPTION; do
   case "$OPTION" in
     d)
       omenshell 'df -h | grep -e Usado -e sda -e mapper'
@@ -53,16 +53,23 @@ while getopts 'dfhlnstu' OPTION; do
     u)
       omenshell 'uptime'
       ;;
+    v)
+      echo -e "OmenShell version 0.2\nCopyright (C) 2023 Rodrigo Ernesto Álvarez Aguilera"
+      echo -e "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n"
+      echo -e "This is free software; you are free to change and redistribute it."
+      echo -e "There is NO WARRANTY, to the extent permitted by law."
+      ;;
     ?)
-      echo "script usage: 
-      [-d] Show information about the file system
-      [-f] Display amount of free and used memory in each system
-      [-h] Show the system's host name
+      echo "script usage:
+      [-d] Show information about the remote file system
+      [-f] Display amount of free and used memory in each remote system
+      [-h] Show the remote system's host name
       [-l] Show a listing of last logged in users
       [-n] Show network and DNS configuration
       [-s] Test internet bandwidth using speedtest.net
       [-t] Display Linux processes
-      [-u] Tell how long each system has been running"
+      [-u] Tell how long each remote system has been running
+      [-v] Show OmenShell version and License"
       >&2
       exit 1
       ;;
