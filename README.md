@@ -38,6 +38,7 @@ omen [-option]
   [-h] Show the remote system's host name
   [-l] Show a listing of last logged in users
   [-n] Show network and DNS configuration
+  [-p] Shutdown ALL servers. Use with caution!
   [-s] Test internet bandwidth using speedtest.net
   [-t] Display Linux processes
   [-u] Tell how long each remote system has been running
