@@ -16,13 +16,13 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-#   Version 0.3 - July 11, 2023
+#   Version 0.4 - August 8, 2023
 #   Author: Rodrigo Ernesto Alvarez Aguilera
 #
-#   Tested under Ubuntu 22.04.2 LTS using GNU bash version 5.1.16
+#   Tested under Ubuntu 22.04.3 LTS using GNU bash version 5.1.16
 #
 
-while getopts 'dfhlnstuv' OPTION; do
+while getopts 'dfhlnprstuv' OPTION; do
   case "$OPTION" in
     d)
       omenshell 'df -h | grep -e Usado -e sda -e mapper'
@@ -47,6 +47,9 @@ while getopts 'dfhlnstuv' OPTION; do
     p)
       omenshell "sudo -S init 0"
       ;;
+    r)
+      omenshell 'sudo -S cat /var/log/auth.log |grep "Failed password for root" |wc -l'
+      ;;
     s)
       omenshell 'speedtest'
       ;;
@@ -57,7 +60,7 @@ while getopts 'dfhlnstuv' OPTION; do
       omenshell 'uptime'
       ;;
     v)
-      echo -e "OmenShell version 0.3\nCopyright (C) 2023 Rodrigo Ernesto Álvarez Aguilera"
+      echo -e "OmenShell version 0.4\nCopyright (C) 2023 Rodrigo Ernesto Álvarez Aguilera"
       echo -e "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n"
       echo -e "This is free software; you are free to change and redistribute it."
       echo -e "There is NO WARRANTY, to the extent permitted by law."
@@ -70,6 +73,7 @@ while getopts 'dfhlnstuv' OPTION; do
       [-l] Show a listing of last logged in users
       [-n] Show network and DNS configuration
       [-p] Shutdown ALL servers. Use with caution!
+      [-r] Show failed SSH root login attempts
       [-s] Test internet bandwidth using speedtest.net
       [-t] Display Linux processes
       [-u] Tell how long each remote system has been running
