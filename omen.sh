@@ -1,7 +1,7 @@
 #!/bin/bash
 #   OmenShell - Manage multiple servers through SSH in one go
 #
-#   Copyright © 2023, Rodrigo Ernesto Alvarez Aguilera <incognia@gmail.com>
+#   Copyright © 2025, Rodrigo Ernesto Alvarez Aguilera <incognia@gmail.com>
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -16,10 +16,10 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-#   Version 0.4 - August 8, 2023
+#   Version 0.5 - March 25, 2025
 #   Author: Rodrigo Ernesto Alvarez Aguilera
 #
-#   Tested under Ubuntu 22.04.3 LTS using GNU bash version 5.1.16
+#   Tested under Ubuntu 24.04.2 LTS using GNU bash version 5.2.21
 #
 
 while getopts 'dfhlnprstuv' OPTION; do
@@ -60,7 +60,7 @@ while getopts 'dfhlnprstuv' OPTION; do
       omenshell 'uptime'
       ;;
     v)
-      echo -e "OmenShell version 0.4\nCopyright (C) 2023 Rodrigo Ernesto Álvarez Aguilera"
+      echo -e "OmenShell version 0.5\nCopyright (C) 2025 Rodrigo Ernesto Álvarez Aguilera"
       echo -e "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n"
       echo -e "This is free software; you are free to change and redistribute it."
       echo -e "There is NO WARRANTY, to the extent permitted by law."

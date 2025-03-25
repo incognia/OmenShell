@@ -1,6 +1,6 @@
 # OmenShell | Manage multiple servers through SSH
 
-[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-steelblue)](https://www.gnu.org/licenses/gpl-3.0.html) ![Ubuntu](https://img.shields.io/badge/Ubuntu-v22.04.3_LTS-e9500e.svg) ![Bash](https://img.shields.io/badge/Bash-v5.1.16-232c34.svg)
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-steelblue)](https://www.gnu.org/licenses/gpl-3.0.html) ![Ubuntu](https://img.shields.io/badge/Ubuntu-v24.04.2_LTS-e9500e.svg) ![Bash](https://img.shields.io/badge/Bash-v5.2.21-232c34.svg)
 
 ## Requirements
 
@@ -84,4 +84,4 @@ Operating System: Ubuntu 22.04.2 LTS
 ===================================================[ OmenShell by incognia ]====
 ```
 
-CC 2023 | Rodrigo Ernesto Álvarez Aguilera | [Mail](mailto:incogniaqgmail.com) | [LinkedIn](https://www.linkedin.com/in/rodrigo-alvarez-aguilera/) | [Blog](https://incognia.wordpress.com/about)
+CC 2025 | Rodrigo Ernesto Álvarez Aguilera | [Mail](mailto:incognia@gmail.com) | [LinkedIn](https://www.linkedin.com/in/rodrigo-alvarez-aguilera/) | [Resume](https://incognia.github.io/)
